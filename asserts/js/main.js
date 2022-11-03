@@ -67,6 +67,12 @@ function golAdversario() {
 }
 
 
+function showEmoji(){
+    const emoji = document.getElementById('emoji-gol')
+    emoji.classList.add('show')
+}
+
+
 onSnapshot(doc(db, "matches", "jg-01"), (doc) => {
     const { as, outer } = doc.data()
 
@@ -76,6 +82,7 @@ onSnapshot(doc(db, "matches", "jg-01"), (doc) => {
         console.log('Entrou')
         showConfete('jg-01')
         golAS()
+        showEmoji()
     }
 
     if (outerHist[0] > outerHist[1]) {
