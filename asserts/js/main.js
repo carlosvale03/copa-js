@@ -23,7 +23,7 @@ function golAS() {
     // audio.muted = true;
     // audio.play()
     const audio = new Audio();
-    audio.src = '/DIO - eventos/DIO - evento da copa 2022/copa-js/asserts/audio/gol.mp3';
+    audio.src = 'asserts/audio/gol.mp3';
     audio.playbackRate = 1.5
     // when the sound has been loaded, execute your code
     audio.oncanplaythrough = (event) => {
@@ -48,7 +48,7 @@ function golAdversario() {
     // audio.muted = true;
     // audio.play()
     const audio = new Audio();
-    audio.src = '/DIO - eventos/DIO - evento da copa 2022/copa-js/asserts/audio/adão ta puto.ogg';
+    audio.src = 'asserts/audio/adão ta puto.ogg';
     audio.playbackRate = 1.5
     // when the sound has been loaded, execute your code
     audio.oncanplaythrough = (event) => {
