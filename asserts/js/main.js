@@ -66,10 +66,13 @@ function golAdversario() {
     }
 }
 
-
-function showEmoji(){
+function emojiGol(){
     const emoji = document.getElementById('emoji-gol')
     emoji.classList.add('show')
+
+    setInterval(() => {
+        emoji.classList.remove('show')
+    }, 5000)
 }
 
 
@@ -79,10 +82,10 @@ onSnapshot(doc(db, "matches", "jg-01"), (doc) => {
     updateScore('jg-01', as, outer)
 
     if (asHist[0] > asHist[1]) {
-        console.log('Entrou')
+        console.log('Gollllll')
         showConfete('jg-01')
         golAS()
-        showEmoji()
+        emojiGol()
     }
 
     if (outerHist[0] > outerHist[1]) {
